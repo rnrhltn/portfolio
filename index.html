@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header"> 
+        <div class="container">
+            <nav>
+                <img src="LOGO RAIN FINAL.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header"> Home</a></li>
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#futures"> Future</a></li>
+                    <li><a href="#portfolio"> Portfolio</a></li>
+                    <li><a href="#contact"> Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hi, I'm <span>Rainier</span><br> Moya Holaton</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------------about me------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="mirrorpic.jpg" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p> As a dedicated and motivated Computer Science student, I am deeply
+                        committed to the pursuit of excellence in education and to fostering a
+                        dynamic learning environment. With two years of experience in
+                        learning programming, I bring a unique blend of skills and insights that
+                        I am eager to contribute to the esteemed academic community at the
+                        society.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Intrapersonal</span></li>
+                            <li><span>Creative Thinking</span></li>
+                            <li><span>Oral and Communication</span></li>
+                            <li><span>Multitasking</span></li>
+                            <li><span>Technical Skills</span></li>
+                            <li><span>Adaptability and Learning Agility</span></li>
+                            <li><span>Video Editing</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Tech Officer</span><br>ALPHA: Alliance of Leading Programmers through Heuristic Adaptation</li>
+                            <li><span>Event Facilitator and Chairman of Games</span><br>ALPHA: Alliance of Leading Programmers through Heuristic Adaptation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Present</span><br>Bachelor of Science in Computer Science<br>STI Ortigas-Cainta</li>
+                            <li><span>2020-2022</span><br>Science, Technology, Engineering and Mathematics<br>Our Lady of Fatima University</li>
+                            <li><span>2014-2020</span><br>CSS Elective<br>Santolan High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------5 year vision----------- -->
+    <div id="futures">
+        <div class="container">
+            <h1 class="sub-title">Five-Year Vision</h1>
+            <div class="futures-list">
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Career Advancement</h2>
+                    <p>I plan to continue enhancing my expertise in programming, staying current with emerging trends and technologies.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-school"></i>
+                    <h2>Education and Certification</h2>
+                    <p>Engage in continuous professional development through workshops, seminars, and online courses.
+                    </p>  
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-up-right-dots"></i>
+                    <h2>Personal Growth</h2>
+                    <p>Strive for a balanced lifestyle that allows for personal hobbies, family time, and community involvement.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------------------------portfolio----------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Hobbies and Interest</h1>
+            <div class="hobby-list">
+                <div class="hobby">
+                    <img src="coffee1.jpg">
+                    <div class="layer">
+                        <h3>Coffee Hopping</h3>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <img src="champml2.jpg">
+                    <div class="layer">
+                        <h3>Playing Mobile Games</h3>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <img src="bike2.jpg">
+                    <div class="layer">
+                        <h3>Cycling</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------contact----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>holatonrainier13@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09611573716</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rainier.holaton.1"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/rnrhltnnew"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/rnrhltn/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rainier-holaton-0916522b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Holaton Resume.pdf" download class="btn btn2">Donwload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Rain 2024 All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
